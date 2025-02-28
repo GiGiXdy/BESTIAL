@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca del Proyecto - BESTIAL</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1b5e20, #6a1b9a);
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            border-bottom: 5px solid #76ff03; /* Línea de separación llamativa */
+        }
+
+        .logo {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #76ff03;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px 15px;
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background: #76ff03;
+            color: black;
+        }
+
+        .section {
+            padding: 40px 20px;
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro sutil */
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 1000px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Sombra para profundidad */
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #d4e157;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para destacar el título */
+        }
+
+        p {
+            font-size: 1.3em;
+            line-height: 1.6;
+            color: #e0e0e0;
+            max-width: 900px;
+            margin: 0 auto 20px;
+            text-align: justify; /* Mejor lectura */
+        }
+
+        p a {
+            color: #76ff03;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        p a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight {
+            background-color: #76ff03;
+            color: black;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* Sección de efectos de texto */
+        .effect-text {
+            font-size: 1.4em;
+            color: #ff4081;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            animation: glow 1.5s infinite alternate;
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px #ff4081, 0 0 20px #ff4081, 0 0 30px #ff4081;
+            }
+            100% {
+                text-shadow: 0 0 20px #ff4081, 0 0 30px #ff4081, 0 0 40px #ff4081;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="Logo2.png" alt="Logo BESTIAL" style="width: 100px; height: 100px;">
+        <h1 class="logo">BESTIAL</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="Acerca.html">Acerca del Proyecto</a>
+    </nav>
+
+    <section id="acerca" class="section">
+        <h2>Acerca del Proyecto</h2>
+        <p>BESTIAL es un videojuego de acción y aventura en el que el protagonista, Chico Bestia, debe enfrentar desafíos y enemigos en un mundo peligroso. El juego destaca por sus mecánicas de transformación en diferentes formas animales para superar obstáculos y resolver problemas de manera creativa. El proyecto tiene como objetivo ofrecer una experiencia dinámica e interactiva para los jugadores que disfrutan de la acción, la estrategia y los giros inesperados.</p>
+
+    </section>
+
+</body>
+</html>
