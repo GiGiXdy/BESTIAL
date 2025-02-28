@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BESTIAL - Videojuego</title>
+    <title>BESTIAL - Proyecto Independiente</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
     <style>
@@ -43,18 +43,22 @@
 
         header {
             display: flex;
-            justify-content: flex-start;
-            align-items: center;
+            justify-content: center; /* Centra el contenido en el eje horizontal */
+            align-items: center; /* Centra el contenido en el eje vertical */
             padding: 50px;
             width: 100%;
             max-width: 1200px;
             margin-top: 20px;
             background-color: rgba(0, 0, 0, 0.8); /* Fondo negro */
             border-radius: 10px;
+            flex-wrap: wrap;
+            gap: 20px;
+            text-align: center; /* Alinea el texto al centro */
         }
 
         .logo {
-            width: 500px; /* Logo más grande */
+            width: 100%; /* Hace que la imagen ocupe el 100% del ancho disponible */
+            max-width: 500px; /* Limita el tamaño máximo a 500px */
             height: auto;
             object-fit: contain;
         }
@@ -111,6 +115,61 @@
         .gallery img:hover {
             transform: scale(1.05); /* Aumenta un poco el tamaño */
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Efecto de sombra más fuerte */
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 1024px) {
+            .title {
+                font-size: 4em; /* Reducir tamaño del título */
+            }
+
+            .logo {
+                width: 400px; /* Reducir tamaño del logo */
+            }
+
+            .gallery {
+                grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas medianas */
+            }
+
+            .gallery img {
+                height: 200px; /* Imágenes más pequeñas */
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .title {
+                font-size: 3em; /* Reducir más el tamaño del título */
+            }
+
+            .logo {
+                width: 300px; /* Reducir más el tamaño del logo */
+            }
+
+            .gallery {
+                grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas más pequeñas */
+            }
+
+            .gallery img {
+                height: 180px; /* Imágenes más pequeñas */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .title {
+                font-size: 2.5em; /* Ajustar aún más el tamaño del título */
+            }
+
+            .logo {
+                width: 250px; /* Reducir tamaño del logo */
+            }
+
+            .gallery {
+                grid-template-columns: 1fr; /* 1 columna en pantallas muy pequeñas */
+            }
+
+            .gallery img {
+                height: 150px; /* Imágenes más pequeñas */
+            }
         }
     </style>
 </head>

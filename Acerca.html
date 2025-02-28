@@ -115,6 +115,60 @@
                 text-shadow: 0 0 20px #ff4081, 0 0 30px #ff4081, 0 0 40px #ff4081;
             }
         }
+
+        /* Media queries para dispositivos pequeños */
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2em;
+            }
+
+            nav a {
+                font-size: 1em;
+                padding: 8px 12px;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1.1em;
+            }
+
+            .section {
+                padding: 20px;
+                margin: 15px;
+            }
+        }
+
+        /* Media queries para dispositivos muy pequeños (móviles) */
+        @media (max-width: 480px) {
+            header {
+                padding: 10px;
+            }
+
+            .logo {
+                font-size: 1.8em;
+            }
+
+            nav a {
+                font-size: 0.9em;
+                padding: 6px 10px;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .section {
+                padding: 15px;
+                margin: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -132,7 +186,6 @@
     <section id="acerca" class="section">
         <h2>Acerca del Proyecto</h2>
         <p>BESTIAL es un videojuego de acción y aventura en el que el protagonista, Chico Bestia, debe enfrentar desafíos y enemigos en un mundo peligroso. El juego destaca por sus mecánicas de transformación en diferentes formas animales para superar obstáculos y resolver problemas de manera creativa. El proyecto tiene como objetivo ofrecer una experiencia dinámica e interactiva para los jugadores que disfrutan de la acción, la estrategia y los giros inesperados.</p>
-
     </section>
 
 </body>
